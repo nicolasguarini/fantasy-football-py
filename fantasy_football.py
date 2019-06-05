@@ -11,7 +11,7 @@ from players_registry import players
 
 
 def clear():
-    os.system("clear")
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def fill_teams(teams):
@@ -131,6 +131,7 @@ def manage_team(teams, team_index):
                 input("Hit ENTER to continue...")
 
         elif user_choice == 2:
+            
             try:
                 sell(teams, team_index)
             except PlayerNotFoundError:
