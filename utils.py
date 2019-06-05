@@ -1,14 +1,14 @@
-class GiocatoreNonTrovatoError(Exception):
+class PlayerNotFoundError(Exception):
     pass
 
 
-class BudgetNonSufficienteError(Exception):
+class NotEnoughPlayersError(Exception):
     pass
 
 
-class GiocatoriNonSufficientiError(Exception):
+class NotEnoughBudgetError(Exception):
     pass
 
 
-class FormazioneNonCreataError(Exception):
+class NotCreatedFormationError(Exception):
     pass
